@@ -1,7 +1,11 @@
-@if (session()->has('sweetalert2'))
-  <script type="module">
-    import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.esm.all.min.js';
+<script type="module">
+    import Swal from '/node_modules/sweetalert2/dist/sweetalert2.esm.all.min.js'
 
-    Swal.fire(@json(session('sweetalert2')));
-  </script>
-@endif
+    @if (session()->has('swal'))
+    Swal.fire(@json(session('swal')));
+    @endif
+
+    document.addEventListener('swal', function (e) {
+        Swal.fire(e.detail[0]);
+    });
+</script>

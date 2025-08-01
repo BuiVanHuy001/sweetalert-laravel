@@ -1,20 +1,22 @@
 {
-  "name": "sweetalert2/laravel",
-  "description": "Official SweetAlert2 integration for Laravel framework",
-  "license": "MIT",
-  "require": {
-    "laravel/framework": "^11.0 || ^12.0"
-  },
+  "name": "buivanhuy/sweetalert2-laravel",
+  "description": "Custom SweetAlert2 integration for Laravel.",
+  "type": "library",
   "autoload": {
     "psr-4": {
-        "SweetAlert2\\Laravel\\": "src/"
+      "SweetAlert\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-          "SweetAlert2\\Laravel\\ServiceProvider"
-      ]
+        "SweetAlert\\SweetAlertServiceProvider"
+      ],
+      "aliases": {
+        "Alert": "SweetAlert\\Facades\\Alert"
+      }
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
