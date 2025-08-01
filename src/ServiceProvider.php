@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace SweetAlert2\Laravel;
+namespace SweetAlert;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
