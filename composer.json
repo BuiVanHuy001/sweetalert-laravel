@@ -1,5 +1,5 @@
 {
-  "name": "equivalency/sweetalert-laravel",
+  "name": "buivanhuy/sweetalert-laravel",
   "description": "Custom SweetAlert2 integration for Laravel.",
   "type": "library",
   "autoload": {
