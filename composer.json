@@ -10,10 +10,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "SweetAlert\\SweetAlertServiceProvider"
+        "SweetAlert\\ServiceProvider"
       ],
       "aliases": {
-        "Alert": "SweetAlert\\Facades\\Alert"
+        "Swal": "SweetAlert\\Facades\\Alert"
       }
     }
   },
