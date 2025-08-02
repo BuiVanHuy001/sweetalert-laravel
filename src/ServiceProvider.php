@@ -8,7 +8,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sweetalert2');
+        $this->publishes([
+            __DIR__ . '/../resources/js/sweetalert2.all.min.js' => public_path('vendor/sweetalert2/sweetalert2.all.min.js'),
+        ], 'public');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'swal');
     }
 
     public function register(): void

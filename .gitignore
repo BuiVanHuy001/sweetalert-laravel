@@ -19,20 +19,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/build/
-/dist/
-
-*.log
-
-.env
-.env.*
-
-.cache/
-*.cache
-
-*.tmp
-*.temp
-
 /coverage/
 /.nyc_output/
 

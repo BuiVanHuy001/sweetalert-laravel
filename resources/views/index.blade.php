@@ -1,11 +1,7 @@
+<script src="{{ asset('vendor/sweetalert2/sweetalert2.all.js') }}"></script>
 <script type="module">
-    import Swal from '/node_modules/sweetalert2/dist/sweetalert2.esm.all.min.js'
+    const swalData = @json(session('swal', null));
+    if (swalData) Swal.fire(swalData);
 
-    @if (session()->has('swal'))
-    Swal.fire(@json(session('swal')));
-    @endif
-
-    document.addEventListener('swal', function (e) {
-        Swal.fire(e.detail[0]);
-    });
+    window.addEventListener('swal', e => Swal.fire(e.detail[0]));
 </script>
