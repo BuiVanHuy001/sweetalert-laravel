@@ -4,15 +4,10 @@
 
 This package allows you to easily display beautiful alert dialogs from both **Blade** and **Livewire**, without the need to manually install SweetAlert2 via npm or configure imports.
 
-```sh
-composer require buivanhuy/sweetalert-laravel:dev-main
-php artisan vendor:publish --tag=public
-```
-
 ## Installation
 
 ```bash
-composer require buivanhuy/sweetalert-laravel:dev-main
+composer require buivanhuy/sweetalert-laravel
 php artisan vendor:publish --tag=public
 ```
 
