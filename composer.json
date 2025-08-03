@@ -1,6 +1,6 @@
 {
   "name": "buivanhuy/sweetalert-laravel",
-  "description": "SweetAlert2 integration for Laravel (supports Livewire, Blade, and toasts)",
+  "description": "SweetAlert2 integration for Laravel (supports Livewire, Blade)",
   "type": "library",
   "require": {
     "php": ">=8.0",
